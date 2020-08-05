@@ -18,11 +18,40 @@
       width: 100%;
       cursor: zoom-in;
     }
+
+    .sdss-image {
+      -webkit-transform: scaleY(-1);
+      transform: scaleY(-1);
+    }
   </style>
 </head>
 
 <body>
   <div id="container" class="container-fluid mt-3">
+    <p>Diagrama do modelo usado: <a href="model.png">clique aqui</a>. Clique na imagem abaixo para ampliar.</p>
+  </div>
+
+  <div class="modal" tabindex="-1" id="details-modal">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-header"></div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-8">
+              <div class="row row-cols-4 images"></div>
+            </div>
+            <div class="col-4">
+              <div style="min-height: 200px;">
+                <p class="small text-center mb-0">SDSS</p>
+                <img src="" class="sdss-image" width="100%">
+              </div>
+              <img src="" class="mx-auto d-block mt-3 rgb-image" style="max-width: 300px;">
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
